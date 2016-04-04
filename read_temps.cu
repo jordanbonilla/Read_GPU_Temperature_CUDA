@@ -1,6 +1,7 @@
 //--------------------------------------------------------------------------
 // Project: 
-// Select the least utilized GPU on a CUDA-enabled system.
+// Read GPU temepratures on a CUDA-enabled system.
+// Bypass the need for 3rd party libraries.
 // Insert into your code as desired. 
 //
 // Prerequisites: 
