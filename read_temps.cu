@@ -50,11 +50,12 @@ void read_temps()
             }
             unsigned int temp_end = i;
             char this_temperature[32];
-                        // Read in the characters cooresponding to this temperature
-                        for(int j = 0; j < temp_end - temp_begin; ++j) {
-                            this_temperature[j] = output[temp_begin + j];
-                        }
-                        this_temperature[temp_end - temp_begin + 1] = '\0';
+            // Read in the characters cooresponding to this temperature
+            for(int j = 0; j < temp_end - temp_begin; ++j) {
+                this_temperature[j] = output[temp_begin + j];
+            }
+            this_temperature[temp_end - temp_begin + 1] = '\0';
+            // Convert the string representation to an int
             temperatures[num_temps_parsed] = atoi(this_temperature);
             num_temps_parsed++;
         }
